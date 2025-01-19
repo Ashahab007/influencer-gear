@@ -49,6 +49,25 @@
   font-style: normal;
 }
 
+.primary-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: #e02c6d;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 16px;
+}
+
+.primary-btn img {
+  font-weight: 900;
+}
 /* Styling nav section */
 
 #nav-section {
@@ -87,4 +106,65 @@
 .nav-icon img {
   width: 100%;
   height: 100%;
+}
+
+/* styles banner section */
+
+#banner-section {
+  margin: 80px auto;
+  max-width: 1200px;
+}
+.banner-image-container {
+  background-image: url("../images/Circle\ background.jpg");
+  background-position: center;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8rem;
+}
+
+.banner-title {
+  font-size: 3rem;
+}
+
+.banner-description {
+  font-size: 1rem;
+  margin-top: 16px;
+  /* max-width: fit-content; */
+}
+
+/* !Responsive styles */
+@media screen and (max-width: 566px) {
+  #nav-section {
+    flex-direction: column;
+  }
+
+  .nav-selection ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .banner-container {
+    flex-direction: column;
+    /* text-align: center; */
+  }
+
+  .banner-title {
+    font-size: 1.7rem;
+  }
+
+  .banner-text-button {
+    text-align: center;
+    order: 2;
+  }
+  .primary-btn {
+    margin-left: 30%;
+  }
+
+  .banner-image-container {
+    order: 1;
+  }
 }
