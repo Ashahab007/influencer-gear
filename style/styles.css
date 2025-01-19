@@ -140,17 +140,18 @@
 .online-shop {
   max-width: 1110px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  display: flex;
+
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   border-top: 1px solid rgba(128, 128, 128, 0.1);
   border-bottom: 1px solid rgba(128, 128, 128, 0.1);
   padding: 36px 0;
 }
 
 /* !Responsive styles */
+/* *For mobile device */
 @media screen and (max-width: 566px) {
   #nav-section {
     flex-direction: column;
@@ -183,15 +184,54 @@
   }
 
   .online-shop {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-      "shop-1 shop-1 shop-2 shop-2 shop-3 shop-3 shop-4 shop-4"
-      "emp1 shop-5 shop-5 shop-6 shop-6 shop-7 shop-7 emp2";
-    grid-template-rows: 1fr 1fr;
-    gap: 2rem;
+    flex-wrap: wrap;
   }
 
-  .online-shop:nth-child(1) {
+  .online-shop img {
+    width: 100%;
+  }
+
+  /*.online-shop {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "img-1 img-2 img-3 img-4"
+      "... img-5 img-6 img-7 ...";
+    grid-template-rows: 1fr;
+    gap: 1rem;
+  }
+
+  .img-1 {
+    grid-area: img-1;
+  }
+
+  .img-2 {
+    grid-area: img-2;
+  }
+
+  .img-3 {
+    grid-area: img-3;
+  }
+
+  .img-4 {
+    grid-area: img-4;
+  }
+
+  .img-5 {
+    grid-area: img-5;
+  }
+  .img-6 {
+    grid-area: img-6;
+  }
+  .img-7 {
+    grid-area: img-7;
+  }
+
+  .online-shop img {
+    width: 100%;
+    height: 100%;
+  }
+  */
+  /* .online-shop:nth-child(1) {
     grid-area: shop-1;
   }
 
@@ -217,5 +257,5 @@
 
   .online-shop:nth-child(7) {
     grid-area: shop-7;
-  }
+  } */
 }
