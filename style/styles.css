@@ -267,6 +267,28 @@
   margin: 1rem 0px;
 }
 
+/* styles footer section */
+
+.footer-section {
+  background-color: #0b0826;
+  height: 200px;
+}
+
+.footer-title,
+.footer-description {
+  color: aliceblue;
+}
+
+.feature-logo-container {
+  display: flex;
+}
+
+.feature-logo {
+  width: 70px;
+  height: 70px;
+  background-color: #0b0826;
+}
+
 /* !Responsive styles */
 /* *For mobile device */
 @media screen and (max-width: 566px) {
